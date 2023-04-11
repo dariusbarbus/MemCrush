@@ -1,33 +1,10 @@
-//using default values take about 8 GB of ram
-//it's faster to allocate larger chunks of memory for fewer loops
-//allocating a larger chunk makes the program crash
-//DOUBLE_ARR 100000
-
 #include <stdio.h>
 #include <malloc.h>
-
-
-
-//////////////////
-/*OPERATION MODE*/
-//////////////////
-//#define FRIEND_ZONE
-#define LOVER
-
-
-
-///////////////////
-/*FRIEND ZONE SET*/
-///////////////////
 #define DOUBLE_ARR 100000 //how big each chunk will be
-#define MALLOC_CYCLE 11000 //how many times will it allocate
-
-
 
 struct crash{
     double num[DOUBLE_ARR];
 };
-
 
 int main(void){   
     char input = 'a'; 
